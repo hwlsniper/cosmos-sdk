@@ -277,6 +277,7 @@ func (ctx CoreContext) EnsureSignBuildBroadcast(name string, msgs []sdk.Msg, cdc
 	}
 	if ctx.PrintResponse {
 		fmt.Printf("Committed at block %d. Hash: %s Response:%+v \n", res.Height, res.Hash.String(), res.DeliverTx)
+
 	} else {
 		fmt.Printf("Committed at block %d. Hash: %s \n", res.Height, res.Hash.String())
 	}
